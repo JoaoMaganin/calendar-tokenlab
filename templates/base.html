@@ -1,0 +1,162 @@
+{% load static %}
+{% load bootstrap4 %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+  <title>Calendar</title>
+  <style>
+    body {
+      font-family: "ptsans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .btn {
+      outline: none;
+      color: black;
+      background-color: transparent;
+      box-shadow: 0 0 0 0;
+      margin-right: 3px;
+    }
+
+    .clearfix {
+      margin: 15px;
+    }
+
+    .distance {
+      margin: 150px auto;
+    }
+
+    .card-body{
+      background-color: #e4e4e2;
+    }
+
+    .form {
+      margin: auto;
+    }
+
+    .form input, .form select, .form textarea {
+      border-radius: 5px;
+      border: 1px solid #17a2b8;
+      outline: none;
+      background: none;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .title {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .calendar {
+      width: 98%;
+      margin: 15px auto;
+      font-size: 13px;
+    }
+
+    .calendar tr, .calendar td {
+      border: 1px solid black;
+    }
+
+    .calendar th {
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .calendar td {
+      width: 200px;
+      height: 150px;
+      padding: 20px 0px 0px 5px;
+    }
+
+    .month {
+      font-size: 25px;
+    }
+
+    .date {
+      font-size: 16px;
+    }
+
+    ul {
+      height: 100%;
+      padding: 0px 5px 0px 20px;
+    }
+
+    a {
+      color: #17a2b8;
+    }
+
+    h1{
+      text-align: center;
+      border-bottom: 1px solid black;
+      margin: 10px 10px 15px 5px;
+      font-size: 55px;
+    }
+
+    /* login */
+    .auth-card {
+      margin-bottom: 30px;
+    }
+
+    .logout h1{
+      float: left;
+    }
+
+    .clearfix #logout{
+      margin-top: 10px;
+      float: right;
+      outline: none;
+      color: black;
+      box-shadow: 0 0 0 0;
+      margin-right: 3px;
+    }
+
+    /* register */
+    #messages{
+		background-color: grey;
+		color: #fff;
+		padding: 10px;
+		margin-top: 10px;
+	}
+
+	.user_card {
+	  background-color: #e4e4e4;
+	  padding: 20px 40px;
+	  border-radius: 5px;
+	}
+  </style>
+</head>
+<body>
+
+  {% block content %}
+  {% endblock %}
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  {% block script %}
+  {% endblock %}
+</body>
+</html>
