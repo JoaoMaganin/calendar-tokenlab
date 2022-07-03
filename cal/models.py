@@ -8,7 +8,7 @@ class Event(models.Model):
     description = models.TextField()
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
-    autor = models.ForeignKey(User, on_delete=models.PROTECT)
+    username = models.ForeignKey(User, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.title

@@ -15,9 +15,17 @@
         </div>
         {{ calendar }}
     {% else %}
-        <div>
-            <h1>Não logado</h1>
-            <a class="btn btn-info" href="/accounts/login">Login</a>
+        <div class="clearfix distance">
+            <div class="col-md-4 offset-md-4">
+              <div class="card auth-card">
+                <div class="card-body">
+                    <div class="btn-login">
+                        <h1>You are not logged, please login to continue</h1>
+                        <a href="/accounts/login">Login</a>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
     {% endif %}
 {% endblock %}
